@@ -3,14 +3,20 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
 body{
     background: #18191A;
     color: #E4E6EB;
 }
-.container{
+main{
     width: 75%;
     max-width: 1240px;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -58,8 +64,9 @@ body{
 }
 .tags-used-wrap{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 30px;
+    margin-bottom: 150px;
 }
 .tags{
     background-color: #242526;
@@ -68,6 +75,29 @@ body{
     align-items: center;
     padding: 15px;
     border-radius: 5px;  
+}
+.socials{
+    padding: 20px;
+}
+.socials-links{
+    display: flex;
+    gap: 10px;
+    max-width: 1240px;
+    margin-top: 15px;
+}
+.socials-links a{
+    color: #E4E6EB;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    background-color: #242526;
+    color: #E4E6EB;
+    padding: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 @media screen and (max-width: 855px){
     .name-matric, .bio, .tags-used{
@@ -91,8 +121,8 @@ body{
     }
 }
 @media screen and (max-width: 705px){
-   .container{
+main{
     width: 84%;
     grid-template-columns: 1fr;
-   }
+}
 }
